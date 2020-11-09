@@ -1,0 +1,43 @@
+{
+  "environments": {
+    "dev": {
+      "access_token": "",
+      "plugins": {
+        "attendance-credit-frontend": {
+          "id": 1838,
+          "namespace": "activity-credit",
+
+          "services": {
+            "attendance-credit-backend": {
+              "id": "{{DEV SERVICE ID}}"
+            }
+          }
+        }
+      }
+    },
+    "stage": {
+      "access_token": "a69e1cfd8f6cf383482653d80ad7e69c3ee4a469",
+      "plugins": {
+        "attendance-credit-frontend": {
+          "id": 1838,
+          "namespace": "activity-credit"
+        }
+      },
+      "default": true
+    },
+    "prod": {
+      "access_token": "",
+      "plugins": {
+        "attendance-credit-frontend": {
+          "id": 1838,
+          "namespace": "activity-credit",
+          "services": {
+            "attendance-credit-backend": {
+              "id": "{{PROD SERVICE ID}}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

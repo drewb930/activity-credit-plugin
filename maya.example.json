@@ -1,0 +1,50 @@
+{
+  "environments": {
+    "dev": {
+      "access_token": "{{ DEV ACCESS TOKEN }}",
+      "plugins": {
+        "attendance-credit-frontend": {
+          "id": "{{ DEV ID }}",
+          "namespace": "{{ DEV NAMESPACE }}",
+          "version": 2,
+          "services": {
+            "attendance-credit-backend": {
+              "id": "{{DEV SERVICE ID}}"
+            }
+          }
+        }
+      }
+    },
+    "stage": {
+      "access_token": "{{ STAGE ACCESS TOKEN }}",
+      "plugins": {
+        "attendance-credit-frontend": {
+          "id": "{{ STAGE ID }}",
+          "namespace": "{{ STAGE NAMESPACE }}",
+          "version": 2,
+          "services": {
+            "attendance-credit-backend": {
+              "id": "{{STAGE SERVICE ID}}"
+            }
+          }
+        }
+      },
+      "default": true
+    },
+    "prod": {
+      "access_token": "{{ PROD ACCESS TOKEN }}",
+      "plugins": {
+        "attendance-credit-frontend": {
+          "id": "{{ ID }}",
+          "namespace": "{{ NAMESPACE }}",
+          "version": 2,
+          "services": {
+            "attendance-credit-backend": {
+              "id": "{{PROD SERVICE ID}}"
+            }
+          }
+        }
+      }
+    }
+  }
+}
