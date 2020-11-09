@@ -1,0 +1,9 @@
+{
+  "icon": "icon-user-add-outline",
+  "views": [
+    {
+      "type": "fullPage",
+      "src": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+	"extends": [
+		"standard",
+		"plugin:react/recommended"
+	],
+	"rules": {
+		"no-tabs": ["error", { "allowIndentationTabs": true }],
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"semi": ["error", "always"],
+		"no-extra-semi": "error"
+	},
+	"settings": {
+		"react": {
+		  "version": "detect"
+		}
+	}
+}

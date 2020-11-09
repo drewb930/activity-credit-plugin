@@ -1,0 +1,10 @@
+{
+	"extends": ["standard"],
+	"rules": {
+		"no-tabs": ["error", { "allowIndentationTabs": true }],
+		"indent": ["error", "tab", { "SwitchCase": 1 }],
+		"semi": ["error", "always"],
+		"no-extra-semi": "error",
+		"prefer-promise-reject-errors": 0
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"123": {
+		"settings": {
+			"1": {
+				"webhookId": 1,
+				"webhookKey": "ABC",
+				"folderId": 999,
+				"applicationFormId": 1,
+				"fieldId": 123
+			},
+			"2": {
+				"webhookId": 2,
+				"webhookKey": "DEF"
+			}
+		}
+	}
+}

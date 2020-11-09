@@ -1,0 +1,21 @@
+on: pull_request
+name: Pull Request Test Runner
+jobs:
+  test:
+    name: Run Lint
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install && npm run lint
+      env:
+        CI: true

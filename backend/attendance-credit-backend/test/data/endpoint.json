@@ -1,0 +1,52 @@
+{
+	"forms": [
+		{
+			"id": 1,
+			"name": "Form 1",
+			"records": [
+				{
+					"id": 10
+				},
+				{
+					"id": 11
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Form 2",
+			"records": [
+				{
+					"id": 20
+				},
+				{
+					"id": 21
+				}
+			]
+		}
+	],
+	"activities": [
+		{
+			"id": 123,
+			"changes": {
+				"from": null,
+				"to": {
+					"folder": {
+						"id": 999
+					}
+				}
+			}
+		},
+		{
+			"id": 456,
+			"changes": {
+				"from": null,
+				"to": {
+					"folder": {
+						"id": 555
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "attendance-credit-backend",
+  "version": "1.0.0",
+  "description": "This is a plugin backend service.",
+  "private": true,
+  "dependencies": {
+    "firebase": "2.3.2",
+    "requestify": "0.2.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.2",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "chai": "4.2.0",
+    "mocha": "5.2.0",
+    "mocha-multi": "1.0.1",
+    "mocha-osx-reporter": "0.1.2",
+    "nock": "9.4.3",
+    "sinon": "2.4.1",
+    "nodemon": "^1.12.1"
+  },
+  "main": "./_runner/bin/www",
+  "scripts": {
+    "start": "node ./_runner/bin/www",
+    "start:watch": "nodemon --exitcrash $npm_package_main",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "mocha --require chai/register-expect",
+    "test:watch": "watch 'npm run test'",
+    "test:osx": "multi='mocha-osx-reporter=- spec=-' mocha --require chai/register-expect --reporter mocha-multi",
+    "test:watch-osx": "watch 'npm run test:osx -s'",
+    "maya-pre-build": "cp config-$MAYA_ENV.json src/config.json"
+  }
+}

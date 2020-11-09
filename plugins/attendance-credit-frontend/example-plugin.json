@@ -1,0 +1,53 @@
+{
+  "icon": "icon-spinner icon-spin",
+  "views": [
+    {
+      "type": "inline",
+      "location": "zn-top-nav",
+      "src": "/button.html"
+    },
+    {
+      "type": "inline",
+      "location": "zn-plugin-panel-header",
+      "src": "/button.html"
+    },
+    {
+      "type": "recordOverlay",
+      "src": "/main.html"
+    },
+    {
+      "type": "inline",
+      "location": "zn-plugin-panel-footer",
+      "src": "/button.html"
+    },
+    {
+      "type": "inline",
+      "location": "zn-plugin-form-bottom",
+      "src": "/button.html"
+    },
+    {
+      "type": "inline",
+      "location": "zn-plugin-form-top",
+      "src": "/form-template.html",
+      "defaultDimensions": {
+        "height": "120px"
+      }
+    },
+    {
+      "type": "inline",
+      "location": "zn-plugin-data-subheader",
+      "src": "/special-button.html",
+      "defaultDimensions": {
+        "width": "360px"
+      }
+    },
+    {
+      "type": "settings",
+      "src": "/settings.html"
+    },
+    {
+      "type": "fullPage",
+      "src": "/main.html"
+    }
+  ]
+}
